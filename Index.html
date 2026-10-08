@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PH Downloader</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>PH Video Downloader</h1>
+    <p class="sub">paste a pornhub.com/view_video.php?viewkey=… url</p>
+
+    <div class="input-row">
+      <input type="url" id="url" placeholder="https://www.pornhub.com/view_video.php?viewkey=…" />
+      <button id="go">Get Video</button>
+    </div>
+
+    <div id="status" class="status"></div>
+
+    <div id="result" class="result hidden">
+      <h2 id="title"></h2>
+      <div class="quality-list" id="qualities"></div>
+      <video id="preview" controls class="hidden"></video>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
